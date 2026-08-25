@@ -1,0 +1,18 @@
+﻿Analyzing tripproject...                                        
+
+   info - Unnecessary braces in a string interpolation - lib\screens\trip\games_screen.dart:226:22 - unnecessary_brace_in_string_interps
+warning - The declaration '_stopMusic' isn't referenced - lib\screens\trip\music_screen.dart:100:8 - unused_element
+  error - Too many positional arguments: 0 expected, but 1 found - lib\screens\trip\music_screen.dart:242:11 - extra_positional_arguments_could_be_named
+  error - Expected to find ')' - lib\screens\trip\music_screen.dart:325:24 - expected_token
+  error - Expected to find ')' - lib\screens\trip\music_screen.dart:329:9 - expected_token
+  error - Expected to find ')' - lib\screens\trip\notes_screen.dart:261:22 - expected_token
+   info - Unnecessary use of string interpolation - lib\screens\trip\speed_screen.dart:93:23 - unnecessary_string_interpolations
+
+flutter : 7 issues found. (ran in 8.8s)
+At line:1 char:55
++ ... OLiVE-User\StudioProjects\tripproject" ; flutter analyze 2>&1 | Out-F ...
++                                              ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (7 issues found. (ran in 8.8s):Str 
+   ing) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

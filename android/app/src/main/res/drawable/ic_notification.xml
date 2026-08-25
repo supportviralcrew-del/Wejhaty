@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Status bar / notification small icon.
+
+  IMPORTANT: Android notification icons must be a flat white silhouette on
+  a transparent background — the OS only reads the ALPHA channel to draw
+  the shape (it discards color and re-tints it itself, white on dark status
+  bars, dark on light ones depending on OEM). Using a full-color launcher
+  icon here (like @mipmap/ic_launcher) has no usable alpha silhouette, so
+  Android just shows a blank/empty square — which is the bug this fixes.
+
+  This is a simple crescent moon, drawn as two overlapping circles with an
+  even-odd fill rule (outer circle minus an offset inner circle = crescent
+  sliver). Place this file at:
+    android/app/src/main/res/drawable/ic_notification.xml
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="
+            M12,4
+            A8,8 0 1,0 12,20
+            A8,8 0 1,0 12,4
+            Z
+            M15,3
+            A7,7 0 1,0 15,17
+            A7,7 0 1,0 15,3
+            Z" />
+</vector>

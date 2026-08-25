@@ -1,0 +1,67 @@
+name: tripproject
+description: "Your ultimate road trip companion! Navigate with live GPS tracking, plan stops, manage expenses, track prayer times, and monitor weather - all in one beautiful app. Perfect for travelers, pilgrims, and adventure seekers."
+publish_to: 'none'
+
+version: 1.3.1+7
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  geolocator: ^14.0.2
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  url_launcher: ^6.3.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  path_provider: ^2.1.4
+  file_picker: ^8.1.2
+  audioplayers: ^6.1.0
+  permission_handler: ^11.3.1
+  hijri: ^3.0.1
+  timezone: ^0.11.1
+  video_player: ^2.9.1
+  image_picker: ^1.2.3
+  google_maps_flutter: ^2.13.1
+  share_plus: ^12.0.2
+  google_mobile_ads: ^5.1.0
+  flutter_svg: ^2.0.10
+  lottie: ^3.1.2
+  # Added for better error handling and crash reporting
+  connectivity_plus: ^6.0.5
+  # Added for secure storage
+  flutter_secure_storage: ^9.2.2
+  # Added for the persistent prayer-countdown notification bar
+  flutter_local_notifications: ^21.0.0
+  flutter_qiblah: ^3.1.0+1
+  in_app_purchase: ^3.3.0
+  vibration: ^2.0.0
+  intl: ^0.19.0
+  in_app_review: ^2.0.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/companylogo/ViralCompanyLogo.jpg
+    - assets/icon/RoadTripLogo.png
+    - assets/weather_icons/
+    - assets/WeatherBackgroundImages/
+    - assets/weather_icons/lottie/
+    - assets/Anasheed/
+    - assets/PrayersBanner/
+    - assets/Adhkar/
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/RoadTripLogo.png"
+  min_sdk_android: 21

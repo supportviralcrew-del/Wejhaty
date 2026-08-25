@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android's resource shrinker (enabled by default for release builds,
+  e.g. `flutter build apk`) removes any resource it can't prove is used.
+
+  flutter_local_notifications resolves the notification icon at runtime
+  from a string ('@drawable/ic_notification' -> getIdentifier() lookup),
+  not a direct code/XML reference — so the shrinker can't see it's used
+  and strips it from release builds. That silently breaks the icon (and,
+  through the try/catch in NotificationService, the whole notification)
+  in release APKs while working fine in debug builds.
+
+  This file tells the shrinker to always keep it. Place at:
+    android/app/src/main/res/raw/keep.xml
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/ic_notification" />
